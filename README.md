@@ -31,9 +31,9 @@
   ## Realtional DataBase
 * Also create Data Flow for every table and creating Distination Table in the DLD_Staging database.
 * I need to create new (auto_increment, not-null, primary-key) column for Fact table.
-* Then Creating SSAS package for DataWare house
   ![image](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/ab1f222a-38ac-4ffc-9fad-dded145f0139)
-
+  
+* Then Creating SSAS package for DataWare house
   ![V Final DLD Diagram drawio](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/92b733bb-1477-4d03-ba9e-be9e8e026400)
 
 
