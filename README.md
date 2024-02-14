@@ -10,7 +10,7 @@
 ## Create Data Model:
 * Starting Was from scratch.
   ![DLD First Look drawio](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/9277f857-fad9-4c52-bf9c-3df4ac83f1f7)
-  ![image](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/ea6b661f-ca07-4505-9f22-635594a7894f)
+
 
 
 * loading the Row data from the Csv files with length equal to 3.14 Billion and 6.7 Million Lines ![image](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/6106b5c2-c988-4edf-b386-8a954f62cd40)
@@ -32,6 +32,8 @@
 * Also create Data Flow for every table and creating Distination Table in the DLD_Staging database.
 * I need to create new (auto_increment, not-null, primary-key) column for Fact table.
 * Then Creating SSAS package for DataWare house
+  ![image](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/ab1f222a-38ac-4ffc-9fad-dded145f0139)
+
   ![V Final DLD Diagram drawio](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/92b733bb-1477-4d03-ba9e-be9e8e026400)
 
 
