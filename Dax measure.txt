@@ -1,0 +1,10 @@
+Measure without Nulls = 
+CALCULATE(
+    [OriginalMeasure],
+    FILTER(
+        ALLSELECTED(DateTable),
+        NOT ISBLANK(DateTable[Contract_start_date])
+    )
+)
+
+en_for_map=CONCATENATE("United Arab Emirates ", DimNearesLandMarkTable[nearest_landmark_en])

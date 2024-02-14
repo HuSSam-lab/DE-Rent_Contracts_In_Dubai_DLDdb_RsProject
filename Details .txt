@@ -1,0 +1,36 @@
+---- Buildings open ----
+This dataset contains details about all projects registered in Dubai Land Department including all the available attributes
+
+---- Land Registry open ----
+This dataset contains comprehensive details about all Lands registered in Dubai Land Department
+
+---- Rent contracts open ----
+This dataset contains comprehensive details about all tenancy contracts registered in Ejari System
+
+---- units open ----
+This dataset contains comprehensive details about all free hold units registered in Dubai Land Department , including all available attributes
+
+
+---- accredited escrow agents open ----
+contains a list of all accredited escrow agents in Dubai
+
+
+---- brokers open ----
+This dataset contains comprehensive details about all brokers including all available attributes
+
+
+ ----Developers open ----
+This dataset contains comprehensive details about all developers registered in Dubai Land Department including all the available attributes
+
+
+---- offices open ----
+This dataset contains comprehensive details about all real-estate offices including all available attributes
+
+
+---- projects open ----
+This dataset contains details about all projects registered in Dubai Land Department including all the available attributes.
+
+
+
+
+
