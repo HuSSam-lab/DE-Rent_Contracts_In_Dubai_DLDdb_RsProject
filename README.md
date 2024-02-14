@@ -6,7 +6,9 @@
 
 
 ## Create Data Model:
-* Starting Was from scratch.![DLD First Look.drawio.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/6cf1f8ba-85aa-4a37-ab83-8ceaa887c4c0/3807dc7c-3aa5-48ab-ac7c-a0ae2e596fbf/DLD_First_Look.drawio.png)
+* Starting Was from scratch.
+  ![DLD First Look drawio](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/9277f857-fad9-4c52-bf9c-3df4ac83f1f7)
+
 * loading the Row data from the Csv files with length equal to 3.14 Billion and 6.7 Million Lines ![image](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/6106b5c2-c988-4edf-b386-8a954f62cd40)
 
   ## ETL Job
