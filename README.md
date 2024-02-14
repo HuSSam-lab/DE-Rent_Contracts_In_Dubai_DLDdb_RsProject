@@ -38,6 +38,8 @@
 
 
   ## Data WareHosue
+  * I Create tabular model with these detials ![image](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/d7511730-bfa0-46e4-a38f-be09d98fa0df)
+
   ![image](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/21968900-899c-42c8-bb38-2e24695e824e)
 
   
