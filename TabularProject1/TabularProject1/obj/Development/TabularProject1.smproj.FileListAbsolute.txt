@@ -1,0 +1,8 @@
+F:\Prjoects\03 Full Real State Dubai DLD\Registration\Staging and final\TabularProject1\TabularProject1\obj\Development\TabularProject1.smproj.AssemblyReference.cache
+F:\Prjoects\03 Full Real State Dubai DLD\Registration\Staging and final\TabularProject1\TabularProject1\obj\Development\TabularProject1.smproj.CoreCompileInputs.cache
+F:\Prjoects\03 Full Real State Dubai DLD\Registration\Staging and final\TabularProject1\TabularProject1\bin\Model.asdatabase
+F:\Prjoects\03 Full Real State Dubai DLD\Registration\Staging and final\TabularProject1\TabularProject1\bin\Model.deploymenttargets
+F:\Prjoects\03 Full Real State Dubai DLD\Registration\Staging and final\TabularProject1\TabularProject1\bin\Model.deploymentoptions
+F:\Prjoects\03 Full Real State Dubai DLD\Registration\Staging and final\TabularProject1\TabularProject1\obj\Development\Model.asdatabase
+F:\Prjoects\03 Full Real State Dubai DLD\Registration\Staging and final\TabularProject1\TabularProject1\obj\Development\Model.deploymentoptions
+F:\Prjoects\03 Full Real State Dubai DLD\Registration\Staging and final\TabularProject1\TabularProject1\obj\Development\Model.deploymenttargets

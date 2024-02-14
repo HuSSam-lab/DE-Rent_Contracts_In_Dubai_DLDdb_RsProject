@@ -1,0 +1,746 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1600,
+  "model": {
+    "culture": "en-US",
+    "dataSources": [
+      {
+        "type": "structured",
+        "name": "SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim",
+        "connectionDetails": {
+          "protocol": "tds",
+          "address": {
+            "server": "DESKTOP-B4G45V0\\MSSQLSERVER01",
+            "database": "DLD_Fact_Dim"
+          },
+          "authentication": null,
+          "query": null
+        },
+        "credential": {
+          "AuthenticationKind": "ServiceAccount",
+          "kind": "SQL",
+          "path": "desktop-b4g45v0\\mssqlserver01;DLD_Fact_Dim",
+          "EncryptConnection": false
+        }
+      }
+    ],
+    "tables": [
+      {
+        "name": "Fact Contract Table",
+        "columns": [
+          {
+            "name": "Fact_contract_id",
+            "dataType": "string",
+            "sourceColumn": "Fact_contract_id"
+          },
+          {
+            "name": "contract_reg_type_id",
+            "dataType": "int64",
+            "sourceColumn": "contract_reg_type_id"
+          },
+          {
+            "name": "ejari_bus_property_type_id",
+            "dataType": "int64",
+            "sourceColumn": "ejari_bus_property_type_id"
+          },
+          {
+            "name": "ejari_property_type_id",
+            "dataType": "int64",
+            "sourceColumn": "ejari_property_type_id"
+          },
+          {
+            "name": "ejari_property_sub_type_id",
+            "dataType": "int64",
+            "sourceColumn": "ejari_property_sub_type_id"
+          },
+          {
+            "name": "area_id",
+            "dataType": "int64",
+            "sourceColumn": "area_id"
+          },
+          {
+            "name": "tenant_type_id",
+            "dataType": "int64",
+            "sourceColumn": "tenant_type_id"
+          },
+          {
+            "name": "generated_property_Id",
+            "dataType": "int64",
+            "sourceColumn": "generated_property_Id"
+          },
+          {
+            "name": "generated_master_project_Id",
+            "dataType": "int64",
+            "sourceColumn": "generated_master_project_Id"
+          },
+          {
+            "name": "generated_nearest_landmark_Id",
+            "dataType": "int64",
+            "sourceColumn": "generated_nearest_landmark_Id"
+          },
+          {
+            "name": "generated_nearest_metro_Id",
+            "dataType": "int64",
+            "sourceColumn": "generated_nearest_metro_Id"
+          },
+          {
+            "name": "generated_nearest_mall_Id",
+            "dataType": "int64",
+            "sourceColumn": "generated_nearest_mall_Id"
+          },
+          {
+            "name": "contract_date_Id",
+            "dataType": "int64",
+            "sourceColumn": "contract_date_Id"
+          },
+          {
+            "name": "contract_days",
+            "dataType": "double",
+            "sourceColumn": "contract_days"
+          },
+          {
+            "name": "project_number_id",
+            "dataType": "double",
+            "sourceColumn": "project_number_id"
+          },
+          {
+            "name": "contract_amount",
+            "dataType": "double",
+            "sourceColumn": "contract_amount"
+          },
+          {
+            "name": "annual_amount",
+            "dataType": "double",
+            "sourceColumn": "annual_amount"
+          },
+          {
+            "name": "no_of_prop",
+            "dataType": "int64",
+            "sourceColumn": "no_of_prop"
+          },
+          {
+            "name": "line_number",
+            "dataType": "int64",
+            "sourceColumn": "line_number"
+          },
+          {
+            "name": "is_free_hold",
+            "dataType": "int64",
+            "sourceColumn": "is_free_hold"
+          },
+          {
+            "name": "actual_area",
+            "dataType": "double",
+            "sourceColumn": "actual_area"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim\",",
+                "    #\"dbo_Fact Contract Table\" = Source{[Schema=\"dbo\",Item=\"Fact Contract Table\"]}[Data]",
+                "in",
+                "    #\"dbo_Fact Contract Table\""
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Dim NearestMetro Table",
+        "columns": [
+          {
+            "name": "Nearest_metro_Id",
+            "dataType": "int64",
+            "sourceColumn": "Nearest_metro_Id"
+          },
+          {
+            "name": "nearest_metro_en",
+            "dataType": "string",
+            "sourceColumn": "nearest_metro_en"
+          },
+          {
+            "name": "nearest_metro_ar",
+            "dataType": "string",
+            "sourceColumn": "nearest_metro_ar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim\",",
+                "    #\"dbo_Dim NearestMetro Table\" = Source{[Schema=\"dbo\",Item=\"Dim NearestMetro Table\"]}[Data]",
+                "in",
+                "    #\"dbo_Dim NearestMetro Table\""
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimAreaTable",
+        "columns": [
+          {
+            "name": "area_id",
+            "dataType": "double",
+            "sourceColumn": "area_id"
+          },
+          {
+            "name": "area_Dim_Id",
+            "dataType": "int64",
+            "sourceColumn": "area_Dim_Id"
+          },
+          {
+            "name": "area_name_en",
+            "dataType": "string",
+            "sourceColumn": "area_name_en"
+          },
+          {
+            "name": "area_name_ar",
+            "dataType": "string",
+            "sourceColumn": "area_name_ar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim\",",
+                "    dbo_DimAreaTable = Source{[Schema=\"dbo\",Item=\"DimAreaTable\"]}[Data]",
+                "in",
+                "    dbo_DimAreaTable"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimContractTypeTable",
+        "columns": [
+          {
+            "name": "contract_reg_type_id",
+            "dataType": "int64",
+            "sourceColumn": "contract_reg_type_id"
+          },
+          {
+            "name": "contract_reg_type_ar",
+            "dataType": "string",
+            "sourceColumn": "contract_reg_type_ar"
+          },
+          {
+            "name": "contract_reg_type_en",
+            "dataType": "string",
+            "sourceColumn": "contract_reg_type_en"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim\",",
+                "    dbo_DimContractTypeTable = Source{[Schema=\"dbo\",Item=\"DimContractTypeTable\"]}[Data]",
+                "in",
+                "    dbo_DimContractTypeTable"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimearesMall Table",
+        "columns": [
+          {
+            "name": "Nearest_mall_Id",
+            "dataType": "int64",
+            "sourceColumn": "Nearest_mall_Id"
+          },
+          {
+            "name": "nearest_mall_en",
+            "dataType": "string",
+            "sourceColumn": "nearest_mall_en"
+          },
+          {
+            "name": "nearest_mall_ar",
+            "dataType": "string",
+            "sourceColumn": "nearest_mall_ar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim\",",
+                "    #\"dbo_DimearesMall Table\" = Source{[Schema=\"dbo\",Item=\"DimearesMall Table\"]}[Data]",
+                "in",
+                "    #\"dbo_DimearesMall Table\""
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimEjaribuspropertytype Table",
+        "columns": [
+          {
+            "name": "ejari_bus_property_type_id",
+            "dataType": "int64",
+            "sourceColumn": "ejari_bus_property_type_id"
+          },
+          {
+            "name": "ejari_bus_property_type_ar",
+            "dataType": "string",
+            "sourceColumn": "ejari_bus_property_type_ar"
+          },
+          {
+            "name": "ejari_bus_property_type_en",
+            "dataType": "string",
+            "sourceColumn": "ejari_bus_property_type_en"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim\",",
+                "    #\"dbo_DimEjaribuspropertytype Table\" = Source{[Schema=\"dbo\",Item=\"DimEjaribuspropertytype Table\"]}[Data]",
+                "in",
+                "    #\"dbo_DimEjaribuspropertytype Table\""
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimEjariproperysubtype Table",
+        "columns": [
+          {
+            "name": "ejari_property_sub_type_id",
+            "dataType": "int64",
+            "sourceColumn": "ejari_property_sub_type_id"
+          },
+          {
+            "name": "ejari_property_sub_type_en",
+            "dataType": "string",
+            "sourceColumn": "ejari_property_sub_type_en"
+          },
+          {
+            "name": "ejari_property_sub_type_ar",
+            "dataType": "string",
+            "sourceColumn": "ejari_property_sub_type_ar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim\",",
+                "    #\"dbo_DimEjariproperysubtype Table\" = Source{[Schema=\"dbo\",Item=\"DimEjariproperysubtype Table\"]}[Data]",
+                "in",
+                "    #\"dbo_DimEjariproperysubtype Table\""
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimEjariproperytype Table",
+        "columns": [
+          {
+            "name": "ejari_property_type_id",
+            "dataType": "int64",
+            "sourceColumn": "ejari_property_type_id"
+          },
+          {
+            "name": "ejari_property_type_en",
+            "dataType": "string",
+            "sourceColumn": "ejari_property_type_en"
+          },
+          {
+            "name": "ejari_property_type_ar",
+            "dataType": "string",
+            "sourceColumn": "ejari_property_type_ar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim\",",
+                "    #\"dbo_DimEjariproperytype Table\" = Source{[Schema=\"dbo\",Item=\"DimEjariproperytype Table\"]}[Data]",
+                "in",
+                "    #\"dbo_DimEjariproperytype Table\""
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimMasterProjectTable",
+        "columns": [
+          {
+            "name": "master_property_Id",
+            "dataType": "int64",
+            "sourceColumn": "master_property_Id"
+          },
+          {
+            "name": "master_project_en",
+            "dataType": "string",
+            "sourceColumn": "master_project_en"
+          },
+          {
+            "name": "master_project_ar",
+            "dataType": "string",
+            "sourceColumn": "master_project_ar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim\",",
+                "    dbo_DimMasterProjectTable = Source{[Schema=\"dbo\",Item=\"DimMasterProjectTable\"]}[Data]",
+                "in",
+                "    dbo_DimMasterProjectTable"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimProject Table",
+        "columns": [
+          {
+            "name": "project_Id",
+            "dataType": "int64",
+            "sourceColumn": "project_Id"
+          },
+          {
+            "name": "project_name_ar",
+            "dataType": "string",
+            "sourceColumn": "project_name_ar"
+          },
+          {
+            "name": "project_name_en",
+            "dataType": "string",
+            "sourceColumn": "project_name_en"
+          },
+          {
+            "name": "project_number",
+            "dataType": "double",
+            "sourceColumn": "project_number"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim\",",
+                "    #\"dbo_DimProject Table\" = Source{[Schema=\"dbo\",Item=\"DimProject Table\"]}[Data]",
+                "in",
+                "    #\"dbo_DimProject Table\""
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimProperyUsage Table",
+        "columns": [
+          {
+            "name": "Property_Id",
+            "dataType": "int64",
+            "sourceColumn": "Property_Id"
+          },
+          {
+            "name": "property_usage_en",
+            "dataType": "string",
+            "sourceColumn": "property_usage_en"
+          },
+          {
+            "name": "property_usage_ar",
+            "dataType": "string",
+            "sourceColumn": "property_usage_ar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim\",",
+                "    #\"dbo_DimProperyUsage Table\" = Source{[Schema=\"dbo\",Item=\"DimProperyUsage Table\"]}[Data]",
+                "in",
+                "    #\"dbo_DimProperyUsage Table\""
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimTenant Table",
+        "columns": [
+          {
+            "name": "tenant_type_id",
+            "dataType": "int64",
+            "sourceColumn": "tenant_type_id"
+          },
+          {
+            "name": "tenant_type_en",
+            "dataType": "string",
+            "sourceColumn": "tenant_type_en"
+          },
+          {
+            "name": "tenant_type_ar",
+            "dataType": "string",
+            "sourceColumn": "tenant_type_ar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim\",",
+                "    #\"dbo_DimTenant Table\" = Source{[Schema=\"dbo\",Item=\"DimTenant Table\"]}[Data]",
+                "in",
+                "    #\"dbo_DimTenant Table\""
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimDateTable",
+        "columns": [
+          {
+            "name": "contract_date_Id",
+            "dataType": "int64",
+            "sourceColumn": "contract_date_Id"
+          },
+          {
+            "name": "contract_start_date",
+            "dataType": "dateTime",
+            "sourceColumn": "contract_start_date"
+          },
+          {
+            "name": "contract_end_date",
+            "dataType": "dateTime",
+            "sourceColumn": "contract_end_date"
+          },
+          {
+            "name": "contract_days",
+            "dataType": "double",
+            "sourceColumn": "contract_days"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim\",",
+                "    dbo_DimDateTable = Source{[Schema=\"dbo\",Item=\"DimDateTable\"]}[Data]",
+                "in",
+                "    dbo_DimDateTable"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimNearesLandMarkTable",
+        "columns": [
+          {
+            "name": "nearest_landmark_Id",
+            "dataType": "int64",
+            "sourceColumn": "nearest_landmark_Id"
+          },
+          {
+            "name": "nearest_landmark_en",
+            "dataType": "string",
+            "sourceColumn": "nearest_landmark_en"
+          },
+          {
+            "name": "nearest_landmark_ar",
+            "dataType": "string",
+            "sourceColumn": "nearest_landmark_ar"
+          },
+          {
+            "type": "calculated",
+            "name": "en_for_map",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": "CONCATENATE(\"United Arab Emirates \", DimNearesLandMarkTable[nearest_landmark_en])"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-B4G45V0\\MSSQLSERVER01;DLD_Fact_Dim\",",
+                "    dbo_DimNearesLandMarkTable = Source{[Schema=\"dbo\",Item=\"DimNearesLandMarkTable\"]}[Data]",
+                "in",
+                "    dbo_DimNearesLandMarkTable"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "5152a189-2a2d-47a2-b8d3-44f9403a6555",
+        "fromTable": "Fact Contract Table",
+        "fromColumn": "generated_nearest_metro_Id",
+        "toTable": "Dim NearestMetro Table",
+        "toColumn": "Nearest_metro_Id"
+      },
+      {
+        "name": "e83c1898-5c48-4fa8-96a8-21f22a28e993",
+        "fromTable": "Fact Contract Table",
+        "fromColumn": "area_id",
+        "toTable": "DimAreaTable",
+        "toColumn": "area_Dim_Id"
+      },
+      {
+        "name": "217f8fa5-6249-4dd6-9ee3-323f4737ce26",
+        "fromTable": "Fact Contract Table",
+        "fromColumn": "contract_reg_type_id",
+        "toTable": "DimContractTypeTable",
+        "toColumn": "contract_reg_type_id"
+      },
+      {
+        "name": "aa78fbfc-333b-4a3a-b8bd-780debb2c994",
+        "fromTable": "Fact Contract Table",
+        "fromColumn": "ejari_bus_property_type_id",
+        "toTable": "DimEjaribuspropertytype Table",
+        "toColumn": "ejari_bus_property_type_id"
+      },
+      {
+        "name": "bffb0b71-ccc7-4346-a26b-3387a2f024eb",
+        "fromTable": "Fact Contract Table",
+        "fromColumn": "ejari_property_sub_type_id",
+        "toTable": "DimEjariproperysubtype Table",
+        "toColumn": "ejari_property_sub_type_id"
+      },
+      {
+        "name": "4d0252d4-6694-4ef5-9f9e-c0b384fff47d",
+        "fromTable": "Fact Contract Table",
+        "fromColumn": "ejari_property_type_id",
+        "toTable": "DimEjariproperytype Table",
+        "toColumn": "ejari_property_type_id"
+      },
+      {
+        "name": "a4c390d2-9b41-43f5-8bf8-d6b1a01b5ed5",
+        "fromTable": "Fact Contract Table",
+        "fromColumn": "generated_master_project_Id",
+        "toTable": "DimMasterProjectTable",
+        "toColumn": "master_property_Id"
+      },
+      {
+        "name": "238b9d53-c3ab-4d6e-a020-6757b9a45496",
+        "fromTable": "Fact Contract Table",
+        "fromColumn": "project_number_id",
+        "toTable": "DimProject Table",
+        "toColumn": "project_number"
+      },
+      {
+        "name": "2a56b180-3a0e-424f-8199-8dc1fb194059",
+        "fromTable": "Fact Contract Table",
+        "fromColumn": "generated_property_Id",
+        "toTable": "DimProperyUsage Table",
+        "toColumn": "Property_Id"
+      },
+      {
+        "name": "6464c3ad-0f5c-4a9f-bbcc-de9d559ee96b",
+        "fromTable": "Fact Contract Table",
+        "fromColumn": "tenant_type_id",
+        "toTable": "DimTenant Table",
+        "toColumn": "tenant_type_id"
+      },
+      {
+        "name": "a9e88404-b84d-4527-aa1c-06ebfffe8068",
+        "fromTable": "Fact Contract Table",
+        "fromColumn": "generated_nearest_mall_Id",
+        "toTable": "DimearesMall Table",
+        "toColumn": "Nearest_mall_Id"
+      },
+      {
+        "name": "b81a4397-b69a-4b5c-994d-cdcfc63fe8d6",
+        "fromTable": "Fact Contract Table",
+        "fromColumn": "contract_date_Id",
+        "toTable": "DimDateTable",
+        "toColumn": "contract_date_Id"
+      },
+      {
+        "name": "0fa41cfb-a72b-4b61-ad14-6145604995bf",
+        "fromTable": "Fact Contract Table",
+        "fromColumn": "generated_nearest_landmark_Id",
+        "toTable": "DimNearesLandMarkTable",
+        "toColumn": "nearest_landmark_Id"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "700"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}
