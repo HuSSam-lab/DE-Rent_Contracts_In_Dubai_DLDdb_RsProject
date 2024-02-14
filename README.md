@@ -10,6 +10,8 @@
 ## Create Data Model:
 * Starting Was from scratch.
   ![DLD First Look drawio](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/9277f857-fad9-4c52-bf9c-3df4ac83f1f7)
+  ![image](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/ea6b661f-ca07-4505-9f22-635594a7894f)
+
 
 * loading the Row data from the Csv files with length equal to 3.14 Billion and 6.7 Million Lines ![image](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/6106b5c2-c988-4edf-b386-8a954f62cd40)
 
@@ -34,5 +36,7 @@
 
 
   ## Data WareHosue
+  ![image](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/21968900-899c-42c8-bb38-2e24695e824e)
+
   
 
