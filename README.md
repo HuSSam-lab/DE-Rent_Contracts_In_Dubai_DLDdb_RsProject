@@ -22,10 +22,17 @@
 * I created a new column for the date dim table (Using start & end data columns) in order to link it to the fact table.
 * After all that, I exported the tables to CSV databases.
 * I created an SSIS package for ETL process.
+  ![image](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/a2ba0165-ef17-47d1-b0d3-e51e37d2cf18)
+  ![image](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/c03d78e2-baf1-4d3d-b7c4-ff2722f25fca)
+
   
   ## Realtional DataBase
 * Also create Data Flow for every table and creating Distination Table in the DLD_Staging database.
 * I need to create new (auto_increment, not-null, primary-key) column for Fact table.
 * Then Creating SSAS package for DataWare house
   ![V Final DLD Diagram drawio](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/92b733bb-1477-4d03-ba9e-be9e8e026400)
+
+
+  ## Data WareHosue
+  
 
