@@ -33,7 +33,7 @@
 * Create new (auto_increment, not-null, primary-key) column for Fact table.
   ![image](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/ab1f222a-38ac-4ffc-9fad-dded145f0139)
   
-* SSAS package for DataWare house
+* SSAS package for Data Warehouse
   ![V Final DLD Diagram drawio](https://github.com/HuSSam-lab/DE-Rent_Contracts_In_Dubai_DLDdb_RsProject/assets/73494744/92b733bb-1477-4d03-ba9e-be9e8e026400)
 
 
